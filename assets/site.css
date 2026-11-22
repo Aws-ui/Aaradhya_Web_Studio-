@@ -491,3 +491,43 @@ dialog textarea::placeholder { color: #a69bb5; }
 #chat-question {flex:1;min-width:0;background:#191422;color:white;border:1px solid #5c486a;border-radius:8px;padding:10px;font:inherit}
 .chat-person {display:inline-block;margin-top:14px;text-decoration:underline;color:#eee0c9;font-size:.9rem}
 @media(max-width:650px){.hero h1 {font-size:clamp(3.4rem,12vw,5rem)}.hero-copy {padding-bottom:22px}.contact-links {width:100%}.footer {padding-bottom:92px}}
+
+/* Studio identity: paper, ink and an illuminated atlas. */
+:root {--studio-paper:#eeefe7;--studio-ink:#17251e;--studio-accent:#dcf998}
+.topbar,.hero,.services {background:var(--studio-paper);color:var(--studio-ink)}
+.topbar {border-color:#c6cec2}
+.topbar nav a {color:#344239}
+.topbar nav a:hover {color:#14281b;text-decoration:underline;text-underline-offset:5px}
+.brand-mark {filter:grayscale(1);border-radius:3px}
+.brand-period {color:#71894e}
+.header-cta {background:#1c3024;border-radius:99px;color:#fff;border-color:transparent}
+.hero {border:0}
+#particles {opacity:.28}
+.hero-inner {gap:clamp(18px,3vw,48px);padding-block:clamp(28px,4vw,64px);grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:auto}
+.hero-copy {padding-block:20px}
+.hero .eyebrow,.services .eyebrow {color:#425d40;letter-spacing:.13em}
+.eyebrow-rule {background:currentColor}
+.hero h1 {font-size:clamp(56px,7.2vw,108px);letter-spacing:-.082em;font-weight:760;line-height:.94;margin-top:26px}
+.hero h1 span {font-family:Georgia,serif;font-weight:400;font-style:italic;background:none;color:#3b6044;-webkit-text-fill-color:currentColor;letter-spacing:-.075em;white-space:nowrap}
+.hero-description {max-width:36ch;font-size:clamp(1rem,1.35vw,1.18rem);color:#425046;line-height:1.5}
+.hero .button-primary,.contact .button-primary {background:var(--studio-accent);border-color:#a9c67e;color:#162514}
+.hero .button-quiet {border-color:#a4aea2;color:#223426}
+.hero .button-quiet:hover {background:#dbe2d5}
+.hero .button,.contact .button {border-radius:99px}
+.network {align-self:stretch;isolation:isolate;background:radial-gradient(ellipse at center,#283e31,#122219 75%);border:1px solid #304b38;border-radius:24px;overflow:hidden;margin:0;min-height:390px;height:auto;aspect-ratio:1.16;color:#eff9e9}
+#globe {filter:hue-rotate(169deg) saturate(.65) brightness(1.22)}
+.network-label {color:#e6f9d7;right:18px;top:18px}
+.network-dot {background:#cbef91;box-shadow:0 0 10px #d4ef91}
+.network-controls {right:14px;bottom:14px;background:#15271e;color:#e6f3df;border-color:#48604b}
+.motion-toggle {background:#354d3c;color:white}
+.services {border-top:1px solid #bbc8b9;padding-top:clamp(40px,5vw,75px)}
+.services h2 {letter-spacing:-.07em}
+.service-card,.service-card:hover,.service-card:focus-within {border-radius:15px;background:#fdfdf7;border-color:#bfcbbc}
+.card-visual {filter:hue-rotate(169deg) saturate(.6)}
+.service-brief {color:#315a38}
+.approach,.contact,.footer {background:#14231b}
+.approach .eyebrow,.contact .eyebrow {color:#cee89d}
+.contact-panel {background:#213829;border-color:#50674c}
+.chat-launch {background:#213b2b;color:#f3faeb;border-color:#96ab91}
+@media(max-width:820px){.hero-inner {display:grid;grid-template-columns:1fr;gap:20px}.hero-copy {padding:4px 0}.network {width:100%;min-height:0;aspect-ratio:2;max-height:350px}.hero-description {max-width:43ch}}
+@media(max-width:650px){.header-inner {padding:9px 0;display:flex;justify-content:space-between}.topbar nav {display:none}.hero-inner {padding:25px 0 22px;gap:22px}.hero h1 {font-size:clamp(3.55rem,15vw,5.4rem);margin-top:15px}.hero-description {margin-top:16px}.hero-actions {gap:8px;margin-top:18px}.hero-actions .button {min-height:46px;padding-inline:14px}.network {aspect-ratio:1.68;border-radius:16px}.network-controls {font-size:.67rem;right:8px;bottom:6px}.network-label {top:10px;right:12px;font-size:.65rem}.chat-launch {padding:10px 14px}.service-grid {gap:18px}}
