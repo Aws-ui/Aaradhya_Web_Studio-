@@ -1,306 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aaradhya Web Studio designs responsive websites, landing pages, and digital brand experiences." />
-  <title>Aaradhya Web Studio</title>
-  <link rel="icon" href="logo.png" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a11">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="AW Studio builds websites, campaigns, and search strategies to help ambitious businesses reach the right people.">
+  <title>AW Studio | Aaradhya Web</title>
+  <link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="module" src="assets/site.js"></script>
 </head>
 <body>
-  <div class="bg-glow glow-1"></div>
-  <div class="bg-glow glow-2"></div>
-  <div class="bg-glow glow-3"></div>
-
-  <header class="topbar">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand">
-        <img src="logo.png" class="logo" width="52" height="52" alt="" />
-        <span>
-          <strong>Aaradhya Web Studio</strong>
-          <small>Glass UI • Motion • Web Design</small>
-        </span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="AW Studio home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>AW Studio<span class="brand-period">.</span></span>
       </a>
-
-      <nav class="nav" id="navMenu">
-        <a href="#home" class="active">Home</a>
+      <nav aria-label="Main navigation">
         <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="#approach">Approach</a>
       </nav>
-
-      <div class="nav-actions">
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
-        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
-      </div>
-    </div>
-
-    <div class="mobile-nav" id="mobileNav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <button class="button button-outline header-cta" type="button" data-brief>Start a project</button>
     </div>
   </header>
 
-  <main>
-    <section class="hero section" id="home">
-      <canvas id="particleCanvas" aria-hidden="true"></canvas>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <h1>
-            Web design for <span class="gradient-text">brands in motion.</span>
-          </h1>
-          <p>
-            We build responsive websites, landing pages, and brand experiences with thoughtful design and interactive motion.
-          </p>
-
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule"></span>Aaradhya Web · Digital Growth Studio</p>
+          <h1 id="hero-heading">Grow beyond<br><span>borders.</span></h1>
+          <p class="hero-description">We build websites, campaigns, and search strategies that help ambitious businesses reach the right people.</p>
           <div class="hero-actions">
-            <a href="#contact" class="btn primary">Start Project</a>
-            <a href="#portfolio" class="btn">View Work</a>
+            <a class="button button-primary" href="#services">Explore services</a>
+            <button class="button button-quiet" type="button" data-brief>Plan a project</button>
           </div>
-
         </div>
 
-        <div class="hero-panel reveal" aria-hidden="true">
-          <canvas id="networkGlobe"></canvas>
+        <figure class="network" aria-labelledby="network-title">
+          <div class="network-label">
+            <span class="network-dot" aria-hidden="true"></span>
+            <span id="network-title">Global network</span>
+          </div>
+          <canvas id="globe" tabindex="0" role="img" aria-label="Interactive 3D globe with illustrative connections between cities" aria-describedby="globe-instructions">
+            Interactive globe showing illustrative connections between cities.
+          </canvas>
+          <figcaption class="network-controls">
+            <span id="globe-instructions"><span class="drag-icon" aria-hidden="true"></span>Drag to rotate<span class="sr-only"> or use the arrow keys.</span></span>
+            <button id="motion-toggle" type="button" class="motion-toggle" aria-label="Pause animation">
+              <span class="motion-icon" aria-hidden="true"></span><span id="motion-label">Pause</span>
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow-rule"></span>What we do</p>
+        <div class="section-intro">
+          <h2 id="services-heading">Turn attention<br>into action.</h2>
+          <p>Give people a reason to find you, a clear path to choose you, and a better experience when they do.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="card-visual web-visual" aria-hidden="true">
+              <div class="browser-art"><span></span><i></i><i></i><i></i><b></b></div>
+              <div class="browser-back"></div>
+            </div>
+            <div class="card-body">
+              <h3>Web Design &amp; Development</h3>
+              <p>Fast, mobile-first websites that make your offer clear and give visitors an easy next step.</p>
+              <details class="service-details">
+                <summary>What’s included<span class="plus" aria-hidden="true"></span></summary>
+                <p>Landing pages, responsive design, conversion flows, and analytics setup.</p>
+              </details>
+              <button type="button" class="service-brief" data-brief="Web Design &amp; Development">Plan a website</button>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="card-visual media-visual" aria-hidden="true">
+              <div class="chart-art"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="card-body">
+              <h3>Performance Marketing</h3>
+              <p>Paid campaigns with clear goals, focused creative, and a testing plan you can follow.</p>
+              <details class="service-details">
+                <summary>What’s included<span class="plus" aria-hidden="true"></span></summary>
+                <p>Campaign strategy, ad creative, audience tests, and conversion reporting.</p>
+              </details>
+              <button type="button" class="service-brief" data-brief="Performance Marketing">Plan a campaign</button>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="card-visual search-visual" aria-hidden="true">
+              <div class="search-art"><i></i><i></i><i></i><b></b></div>
+            </div>
+            <div class="card-body">
+              <h3>SEO &amp; Content</h3>
+              <p>Help customers find you through useful content and a site that search engines can understand.</p>
+              <details class="service-details">
+                <summary>What’s included<span class="plus" aria-hidden="true"></span></summary>
+                <p>Search audits, keyword research, content planning, and on-page improvements.</p>
+              </details>
+              <button type="button" class="service-brief" data-brief="SEO &amp; Content">Plan an SEO project</button>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Services</h2>
-          <p>Professional web experiences with modern visuals and practical business structure.</p>
+    <section class="approach section" id="approach" aria-labelledby="approach-heading">
+      <div class="wrap approach-layout">
+        <div class="approach-copy">
+          <p class="eyebrow"><span class="eyebrow-rule"></span>How we work</p>
+          <h2 id="approach-heading">A clear plan.<br>A focused launch.</h2>
+          <p>Choose a step to see how we take a project from the first conversation through launch and iteration.</p>
         </div>
-
-        <div class="cards grid-3">
-          <article class="card reveal">
-            <div class="icon">01</div>
-            <h3>Business websites</h3>
-            <p>Clean, trustworthy, and conversion-focused websites for small businesses and studios.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="icon">02</div>
-            <h3>Portfolio websites</h3>
-            <p>Elegant showcase pages with filters, animated cards, and a premium presentation style.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="icon">03</div>
-            <h3>We build responsive websites</h3>
-            <p>High-impact landing pages built to guide attention and improve engagement.</p>
-          </article>
+        <div class="process">
+          <details open name="approach">
+            <summary><span class="step-number">01</span> Define the goal<span class="plus" aria-hidden="true"></span></summary>
+            <p>We map your audience, review what you already have, and agree on what success should look like.</p>
+          </details>
+          <details name="approach">
+            <summary><span class="step-number">02</span> Build the experience<span class="plus" aria-hidden="true"></span></summary>
+            <p>We design the pages or campaigns, refine the message, and test the experience before launch.</p>
+          </details>
+          <details name="approach">
+            <summary><span class="step-number">03</span> Learn from the launch<span class="plus" aria-hidden="true"></span></summary>
+            <p>We review the early results against your goal and use what we learn to decide what to improve next.</p>
+          </details>
         </div>
+      </div>
+    </section>
 
-        <div class="feature-strip reveal">
-          <div class="aws-badge">
-            <svg viewBox="0 0 128 128" fill="none" aria-hidden="true">
-              <defs>
-                <linearGradient id="awsGrad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#ff9900"></stop>
-                  <stop offset="100%" stop-color="#f59e0b"></stop>
-                </linearGradient>
-              </defs>
-              <path d="M28 74.5h72c10 0 18-8 18-18 0-9.1-6.8-16.5-15.6-17.8C99.3 24.9 84 13 65.8 13 47 13 31.1 25.8 28.2 43.8 17.9 45.4 10 54.2 10 65c0 10.5 7.5 19.5 18 22" stroke="url(#awsGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M33 85h62" stroke="url(#awsGrad)" stroke-width="7" stroke-linecap="round"/>
-              <path d="M43 98h42" stroke="url(#awsGrad)" stroke-width="7" stroke-linecap="round"/>
-            </svg>
-          </div>
+    <section class="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-panel">
           <div>
-            <strong>AWS-style cloud badge</strong>
-            <p>Useful as a tech identity element for hosting, cloud, or digital service branding.</p>
+            <p class="eyebrow"><span class="eyebrow-rule"></span>Your next project</p>
+            <h2 id="contact-heading">What are you building?</h2>
+            <p>Create a short brief with your goals and the service you need.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Portfolio</h2>
-          <p>Filterable showcase cards with a polished visual hierarchy.</p>
-        </div>
-
-        <div class="filter-row reveal">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web</button>
-          <button class="filter-btn" data-filter="ui">UI</button>
-          <button class="filter-btn" data-filter="brand">Brand</button>
-        </div>
-
-        <div class="cards grid-3">
-          <article class="card project reveal" data-type="web">
-            <span class="meta">Website</span>
-            <h3>Studio landing page</h3>
-            <p>Hero-first layout with CTA, services, and conversion-ready structure.</p>
-          </article>
-
-          <article class="card project reveal" data-type="ui">
-            <span class="meta">UI</span>
-            <h3>Glass dashboard</h3>
-            <p>Layered cards, subtle shadows, and motion-driven premium interface design.</p>
-          </article>
-
-          <article class="card project reveal" data-type="brand">
-            <span class="meta">Brand</span>
-            <h3>Tech identity system</h3>
-            <p>Logo-ready visual language for startup or creator brand presentation.</p>
-          </article>
-
-          <article class="card project reveal" data-type="web">
-            <span class="meta">Website</span>
-            <h3>Multi-page business site</h3>
-            <p>Home, services, pricing, FAQ, and contact sections arranged professionally.</p>
-          </article>
-
-          <article class="card project reveal" data-type="ui">
-            <span class="meta">UI</span>
-            <h3>Animated cards</h3>
-            <p>Reveal animation and hover lift effects to create a premium feel.</p>
-          </article>
-
-          <article class="card project reveal" data-type="brand">
-            <span class="meta">Brand</span>
-            <h3>AWS-inspired visual</h3>
-            <p>Cloud-shaped badge for a more recognizable and technology-focused look.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="pricing">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Pricing</h2>
-          <p>Simple starter pricing cards for studio, freelancer, or small business offers.</p>
-        </div>
-
-        <div class="cards grid-3 pricing-grid">
-          <article class="card price reveal">
-            <span class="meta">Starter</span>
-            <h3>₹999</h3>
-            <p>Single landing page, clean design, and basic content setup.</p>
-            <ul>
-              <li>One page</li>
-              <li>Responsive layout</li>
-              <li>Basic animation</li>
-            </ul>
-            <a href="#contact" class="btn">Choose Starter</a>
-          </article>
-
-          <article class="card price featured reveal">
-            <span class="meta">Pro</span>
-            <h3>₹2999</h3>
-            <p>Best for business websites with multiple sections and stronger branding.</p>
-            <ul>
-              <li>Multi-section site</li>
-              <li>Glass UI styling</li>
-              <li>Form + interactions</li>
-            </ul>
-            <a href="#contact" class="btn primary">Choose Pro</a>
-          </article>
-
-          <article class="card price reveal">
-            <span class="meta">Premium</span>
-            <h3>₹5999</h3>
-            <p>Advanced UI, custom interactions, and higher-end visual presentation.</p>
-            <ul>
-              <li>Custom design</li>
-              <li>Advanced features</li>
-              <li>Brand polish</li>
-            </ul>
-            <a href="#contact" class="btn">Choose Premium</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="testimonials">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Testimonials</h2>
-          <p>Auto-rotating feedback section to build trust and premium credibility.</p>
-        </div>
-
-        <div class="testimonial card reveal">
-          <div id="testimonialText" class="testimonial-text"></div>
-          <div id="testimonialName" class="testimonial-name"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>FAQ</h2>
-          <p>Interactive accordion for a better user experience.</p>
-        </div>
-
-        <div class="faq-list">
-          <div class="faq-item reveal">
-            <button class="faq-q">Is this ready for GitHub Pages?</button>
-            <div class="faq-a">Yes. It is static HTML, CSS, and JavaScript, so it can be deployed directly.</div>
-          </div>
-
-          <div class="faq-item reveal">
-            <button class="faq-q">Can I add more pages?</button>
-            <div class="faq-a">Yes. You can reuse the same style and script files for about, services, portfolio, and contact pages.</div>
-          </div>
-
-          <div class="faq-item reveal">
-            <button class="faq-q">Does the theme save automatically?</button>
-            <div class="faq-a">Yes. The selected light or dark theme is saved in local storage.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Contact</h2>
-          <p>Tell us what you want to build and continue the conversation on WhatsApp.</p>
-        </div>
-
-        <div class="contact-grid">
-          <form class="card form reveal" id="contactForm">
-            <input type="text" id="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required />
-            <input type="email" id="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required />
-            <textarea id="message" placeholder="Tell us about your project" aria-label="Project details" required></textarea>
-            <button type="submit" class="btn primary">Continue on WhatsApp</button>
-          </form>
-
-          <div class="card contact-box reveal">
-            <h3>Quick connect</h3>
-            <p>Open a chat with Aaradhya Web Studio.</p>
-            <div class="contact-actions">
-              <a class="btn primary" id="whatsappLink" href="https://wa.me/919561851358" target="_blank" rel="noopener">WhatsApp</a>
-            </div>
-            <div class="mini-tags">
-              <span>Responsive</span>
-              <span>Modern UI</span>
-              <span>Fast loading</span>
-            </div>
-          </div>
+          <button class="button button-primary" type="button" data-brief>Create a project brief</button>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Aaradhya Web Studio. Built with HTML, CSS, and JavaScript.</p>
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top" aria-label="AW Studio, back to top">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>AW Studio<span class="brand-period">.</span></span>
+      </a>
+      <span>Aaradhya Web</span>
+      <a href="#top">Back to top</a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <dialog id="brief-dialog" aria-labelledby="brief-heading">
+    <div class="dialog-top">
+      <p class="eyebrow"><span class="eyebrow-rule"></span>AW Studio</p>
+      <button class="close-button" type="button" aria-label="Close project brief" id="close-brief">×</button>
+    </div>
+    <h2 id="brief-heading">Project brief</h2>
+    <p>Build a summary you can copy into an email or save for later.</p>
+    <form id="brief-form">
+      <label for="brief-service">What do you need?</label>
+      <select id="brief-service" name="service" required autofocus>
+        <option value="">Select a service</option>
+        <option>Web Design &amp; Development</option>
+        <option>Performance Marketing</option>
+        <option>SEO &amp; Content</option>
+        <option>Help choosing a service</option>
+      </select>
+      <label for="brief-goal">What’s your main goal?</label>
+      <textarea id="brief-goal" name="goal" required rows="3" maxlength="500" placeholder="For example, get more enquiries through our website."></textarea>
+      <button class="button button-primary" type="submit">Generate brief</button>
+    </form>
+    <div id="brief-output" hidden>
+      <label for="brief-summary">Your brief</label>
+      <textarea id="brief-summary" rows="5" readonly></textarea>
+      <button class="button button-outline" type="button" id="copy-brief">Copy brief</button>
+      <p id="brief-status" role="status"></p>
+    </div>
+  </dialog>
 </body>
 </html>
