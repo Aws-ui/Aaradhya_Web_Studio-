@@ -1,6 +1,8 @@
 # AW Studio | Aaradhya Web
 
-AW Studio’s website introduces its web design and development, performance marketing, and SEO and content services. Visitors can explore the studio’s approach and create a project brief by choosing a service and describing their goal. The brief is generated in the browser and can be copied for sharing.
+[Open the live website](https://aws-ui.github.io/Aaradhya_Web_Studio-/)
+
+AW Studio’s website introduces its web design and development, performance marketing, and SEO and content services. Visitors can explore the studio’s approach and create a project brief by choosing a service and describing their goal. The brief is generated in the browser and can be copied or shared with Ramesh Kamble on WhatsApp.
 
 ## Run locally
 

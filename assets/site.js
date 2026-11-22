@@ -35,6 +35,7 @@ form.addEventListener("submit", event => {
     return;
   }
   summary.value = `AW Studio — Project brief\n\nService: ${service.value}\n\nGoal: ${goal.value.trim()}`;
+  document.querySelector("#brief-whatsapp").href = "https://wa.me/919561851358?text=" + encodeURIComponent(summary.value);
   output.hidden = false;
   summary.focus();
 });

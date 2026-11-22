@@ -4,9 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a0a11">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="AW Studio builds websites, campaigns, and search strategies to help ambitious businesses reach the right people.">
-  <title>AW Studio | Aaradhya Web</title>
+  <title>Aaradhya Web Studio | Web Design, SEO &amp; Performance Marketing</title>
+  <meta name="description" content="Work with Ramesh Kamble at Aaradhya Web Studio on a mobile-first website, SEO content or paid campaigns. Discuss your project directly on WhatsApp.">
+  <link rel="canonical" href="https://aws-ui.github.io/Aaradhya_Web_Studio-/">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aaradhya Web Studio">
+  <meta property="og:url" content="https://aws-ui.github.io/Aaradhya_Web_Studio-/">
+  <meta property="og:title" content="Aaradhya Web Studio | Websites &amp; Digital Growth">
+  <meta property="og:description" content="Work with Ramesh Kamble at Aaradhya Web Studio on a mobile-first website, SEO content or paid campaigns. Discuss your project directly on WhatsApp.">
+  <meta property="og:image" content="https://aws-ui.github.io/Aaradhya_Web_Studio-/assets/studio-card.png">
+  <meta property="og:image:alt" content="Aaradhya Web Studio — Web design, SEO and campaigns">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://aws-ui.github.io/Aaradhya_Web_Studio-/#studio", "name": "Aaradhya Web Studio", "alternateName": "AW Studio", "url": "https://aws-ui.github.io/Aaradhya_Web_Studio-/", "email": "Www.rkamble@gmail.com", "telephone": "+919561851358", "contactPoint": {"@type": "ContactPoint", "name": "Ramesh Kamble", "contactType": "Project enquiries", "email": "Www.rkamble@gmail.com", "telephone": "+919561851358"}, "knowsAbout": ["Web design", "Web development", "SEO", "Performance marketing"]}</script>
   <link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
   <script type="module" src="assets/site.js"></script>
@@ -22,6 +32,7 @@
       <nav aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
       </nav>
       <button class="button button-outline header-cta" type="button" data-brief>Start a project</button>
     </div>
@@ -33,11 +44,11 @@
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-rule"></span>Aaradhya Web · Digital Growth Studio</p>
-          <h1 id="hero-heading">Grow beyond<br><span>borders.</span></h1>
-          <p class="hero-description">We build websites, campaigns, and search strategies that help ambitious businesses reach the right people.</p>
+          <h1 id="hero-heading">Web design for<br><span>what’s next.</span></h1>
+          <p class="hero-description">Work directly with Ramesh Kamble on a website people can find, understand and use. Start with your business goal and we’ll shape the design, search strategy and campaigns around it.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#services">Explore services</a>
-            <button class="button button-quiet" type="button" data-brief>Plan a project</button>
+            <a class="button button-primary" href="https://wa.me/919561851358">Discuss on WhatsApp</a>
+            <a class="button button-quiet" href="#services">Explore services</a>
           </div>
         </div>
 
@@ -63,8 +74,8 @@
       <div class="wrap">
         <p class="eyebrow"><span class="eyebrow-rule"></span>What we do</p>
         <div class="section-intro">
-          <h2 id="services-heading">Turn attention<br>into action.</h2>
-          <p>Give people a reason to find you, a clear path to choose you, and a better experience when they do.</p>
+          <h2 id="services-heading">Design. Search.<br><em>Campaigns.</em></h2>
+          <p>Choose the service that fits your next step, from launching a first website to bringing more of the right people to an existing one.</p>
         </div>
         <div class="service-grid">
           <article class="service-card">
@@ -138,15 +149,16 @@
       </div>
     </section>
 
-    <section class="contact" aria-labelledby="contact-heading">
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
       <div class="wrap">
         <div class="contact-panel">
           <div>
-            <p class="eyebrow"><span class="eyebrow-rule"></span>Your next project</p>
-            <h2 id="contact-heading">What are you building?</h2>
-            <p>Create a short brief with your goals and the service you need.</p>
+            <p class="eyebrow"><span class="eyebrow-rule"></span>Project enquiries</p>
+            <h2 id="contact-heading">Talk to Ramesh Kamble.</h2>
+            <p>Tell me about your business, what you want to build and when you’d like to launch.</p>
           </div>
-          <button class="button button-primary" type="button" data-brief>Create a project brief</button>
+          <address class="contact-links"><a class="button button-primary" href="https://wa.me/919561851358">Message on WhatsApp</a>
+          <a href="tel:+919561851358">+91 95618 51358</a><a href="mailto:Www.rkamble@gmail.com">Www.rkamble@gmail.com</a></address>
         </div>
       </div>
     </section>
@@ -187,8 +199,19 @@
       <label for="brief-summary">Your brief</label>
       <textarea id="brief-summary" rows="5" readonly></textarea>
       <button class="button button-outline" type="button" id="copy-brief">Copy brief</button>
+      <a class="button button-primary" id="brief-whatsapp" href="https://wa.me/919561851358">Send on WhatsApp</a>
       <p id="brief-status" role="status"></p>
     </div>
   </dialog>
+  <button class="chat-launch" id="chat-launch" aria-haspopup="dialog"><span aria-hidden="true">✦</span> Ask the studio</button>
+  <dialog id="studio-chat" aria-labelledby="chat-title">
+    <div class="dialog-top"><p class="eyebrow">Aaradhya Web</p><button type="button" class="close-button" id="chat-close" aria-label="Close chat">×</button></div>
+    <h2 id="chat-title">Studio assistant</h2>
+    <div class="chat-log" role="log" aria-live="polite"><p>Ask me about web design, SEO, campaigns or a quote. English aur Hinglish dono chalega.</p></div>
+    <div class="chat-prompts"><button>Website cost?</button><button>Help with SEO</button><button>Contact Ramesh</button></div>
+    <form id="ask-form"><label class="sr-only" for="chat-question">Your question</label><input id="chat-question" required maxlength="350" placeholder="Ask a question…" autocomplete="off"><button class="button button-primary">Send</button></form>
+    <a class="chat-person" href="https://wa.me/919561851358">Talk to Ramesh on WhatsApp</a>
+  </dialog>
+  <script type="module" src="assets/assistant.js"></script>
 </body>
 </html>

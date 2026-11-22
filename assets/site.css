@@ -460,3 +460,34 @@ dialog textarea::placeholder { color: #a69bb5; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* Editorial typography and warm paper surfaces for the service catalogue. */
+.hero h1 {font-size:clamp(3.5rem,6.6vw,6.8rem);letter-spacing:-.075em}
+.hero h1 span,.services h2 em {font-family:Georgia,serif;font-weight:400;font-style:italic;letter-spacing:-.055em}
+.hero h1 span {background:linear-gradient(110deg,#f7e6c8,#d6b88d);background-clip:text}
+.hero .eyebrow,.contact .eyebrow {color:#e1c9aa}
+.hero .button-primary,.contact .button-primary {background:#f1dec0;border-color:#f1dec0;color:#241a19;box-shadow:none}
+.services {background:#f5f1ea;color:#24202b;color-scheme:light}
+.services .eyebrow {color:#634d76}
+.services .section-intro>p,.services .card-body>p,.services .service-details p {color:#59525e}
+.service-card,.service-card:hover,.service-card:focus-within {background:#fffcf7;border-color:#d5ced5;color:#24202b}
+.service-card:focus-within {border-color:#6f508a}
+.service-details summary {border-color:#dfd9df;color:#372e42}
+.service-brief {color:#59416f}
+.card-visual {background-color:#211a2c}
+.contact-links {display:grid;gap:8px;font-style:normal;flex-shrink:0}
+.contact-links>a:not(.button) {padding:6px 2px;text-decoration:underline;text-underline-offset:4px}
+.chat-launch {position:fixed;right:clamp(12px,3vw,36px);bottom:max(16px,env(safe-area-inset-bottom));z-index:4;display:flex;align-items:center;gap:10px;padding:12px 19px;border:1px solid #d6c1a8;background:#f1dec0;color:#231a26;border-radius:30px;font-weight:700;box-shadow:0 5px 24px #10092055}
+.chat-launch span {font-size:1.15rem}
+.footer {padding-bottom:72px}
+#studio-chat {width:min(410px,calc(100% - 24px));max-height:85dvh;overflow:auto}
+#studio-chat h2 {font-size:2rem;margin:12px 0 18px}
+.chat-log {height:clamp(115px,27dvh,270px);overflow-y:auto;display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:3px 5px 8px 0}
+.chat-log p {padding:10px 14px;border-radius:12px;background:#292236;color:#f5efff;font-size:.94rem;max-width:95%;overflow-wrap:anywhere}
+.chat-log .visitor {align-self:flex-end;background:#e9d9bf;color:#241b24}
+.chat-prompts {display:flex;gap:5px;flex-wrap:wrap;margin:14px 0}
+.chat-prompts button {padding:8px;border-radius:15px;background:transparent;color:#dbc8f6;border:1px solid #5c486a}
+#ask-form {display:flex;gap:6px}
+#chat-question {flex:1;min-width:0;background:#191422;color:white;border:1px solid #5c486a;border-radius:8px;padding:10px;font:inherit}
+.chat-person {display:inline-block;margin-top:14px;text-decoration:underline;color:#eee0c9;font-size:.9rem}
+@media(max-width:650px){.hero h1 {font-size:clamp(3.4rem,12vw,5rem)}.hero-copy {padding-bottom:22px}.contact-links {width:100%}.footer {padding-bottom:92px}}
